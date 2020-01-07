@@ -1,0 +1,58 @@
+.chats-body {
+    padding: 0;
+
+}
+
+.chats-body .header,
+.chats-body .status-bar {
+    padding: 0px, 20px;
+}
+
+.chat {
+    background-image: url('../images/chatBg.png');
+    min-height: 100vh;
+}
+
+.chat__write {
+
+    position: fixed;
+    bottom: 50px;
+    /*width는 가로의 길이를 정해줌, backgroundcolor를 써보면 알수있음*/
+    width: 80%;
+    /*margin 0 auto  , left 0  , right 0  세가지를 같이 적어주는게 가운데 정렬하는 방법*/
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /*---------------------------------------*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    padding: 0px 20px;
+    border-radius: 40px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .3), 0 -12px 36px -8px rgba(0, 0, 0, .025);
+    /*box-shadow 는 수평, 수직, 블러 값  순서이다.  rgba의 마지막값은 opacity다.   콤마다음 적어주는것은 상단부분에 대한 shadow이다.*/
+    /*예를들어 이렇게도 적어줄 수 있음 ->> box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2), 0px -8px 20px rgba(0, 0, 0, 0.2);*/
+
+
+}
+
+.chat__write i {
+    font-size: 22px;
+}
+
+.chat__write-column:nth-child(2) {
+    width: 80%;
+}
+
+
+.chat__write-column input {
+    padding: 20px 10px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+
+.chat__write-column input:focus {
+    outline: none;
+}
